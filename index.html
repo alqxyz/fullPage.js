@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es-VE">
+<head>
+	<title>Presentacion</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/fullpage/fullpage.css"/>
+</head>
+	<style type="text/css">
+	*{
+		font-family: Arial;
+	}
+		.fp-tableCell{
+			text-align: center !important;
+			color: white;
+		}
+	</style>
+<body>
+	<main id="fullpage">
+		<center>
+			<div class="section">
+				<h1>Titulo</h1>
+				<img src="img/logo.png" width="40%">
+			</div>
+
+			<div class="section">
+				<div class="slide">
+					<h1>Lamina</h1>
+				</div>
+
+				<div class="slide">
+					<h1>Lamina I</h1>
+				</div>
+
+				<div class="slide">
+					<h1>Lamina II</h1>
+				</div>
+			</div>
+
+			<div class="section">
+				<h1>Agradecimientos</h1>
+			</div>
+
+		</center>
+	</main>
+</body>
+
+<script type="text/javascript" src="js/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/fullpage/fullpage.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fullpage').fullpage({
+			verticalCentered: true,
+			slidesNavigation: true,
+			css3: true,
+			navigation: true,
+			scrollBar: false,
+			scrollingSpeed: 300,
+			navigationPosition: 'left',
+			sectionsColor: ['#4d4d4d', '#1BBC9B', '#7E8F7C'],
+			anchors: ['Titulo', 'Laminas', 'Agradecimientos']
+		});
+	});
+</script>
+</html>
